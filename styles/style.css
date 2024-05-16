@@ -22,7 +22,7 @@ figure {
 }
 
 :root {
-  --header-font-family: 'STIX Two Text', sans-serif;
+  --header-font-family: 'STIX Two Text', serif;
   --main-font: Raleway, sans-serif;
   --bg-color: #f3efec;
   --text-color: #312a4e;
