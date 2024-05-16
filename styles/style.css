@@ -93,6 +93,11 @@ button:disabled {
   cursor: pointer;
 }
 
+.header__theme-button:hover {
+  text-decoration: underline;
+
+}
+
 .header__theme-button_is-active {
   position: relative;
   font-weight: 700;
@@ -172,22 +177,40 @@ a {
 }
 
 .content__list {
-  list-style-type: none;
   position: relative;
   font-size: 18px;
+
 }
 
+.content__list-item{
+  position: relative;
+  display:flex;
+  align-items:center;
+
+}
 .content__list-item::before {
   content: '';
-  position: absolute;
-  left: 15px;
-  background-image: url(../images/marker-light.svg);
-  width: 15px;
-  height: 15px;
+  /*
+   left: 15px;
+   width: 15px;
+   height: 15px;
+   inset-block-start: 50%;
+   */
+
+   position: absolute;
+
+   background-image: url(../images/marker-light.svg);
+   vertical-align: middle;
+   height: 15px;
+   min-width: 15px;
+   width: 15px;
+   left:-25px;
 }
+
 
 .theme_dark .content__list-item::before {
   background-image: url(../images/marker-dark.svg);
+
 }
 
 .content__list-item:not(:last-of-type) {
